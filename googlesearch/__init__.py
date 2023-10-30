@@ -10,7 +10,8 @@ def _req(term, results, lang, start, proxies, timeout):
     resp = get(
         url="https://www.google.com/search",
         headers={
-            "User-Agent": get_useragent()
+            "User-Agent": get_useragent(),
+            "Accept-Language", "en-US,en;q=0.5";
         },
         params={
             "q": term,
